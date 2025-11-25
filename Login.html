@@ -150,7 +150,20 @@
 	}
 
 	.entry-item{
-	display:grid;
+		display: flex;
+		lex-direction: column;
+	}
+	
+	.entry-item .password-label {
+		order: 1;
+	}
+	
+	.entry-item input[type="password"] {
+		order: 2;
+	}
+	
+	.entry-item #forgotPassword {
+	  order: 3;
 	}
 	
 	.heading {
