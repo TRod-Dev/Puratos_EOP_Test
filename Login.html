@@ -197,12 +197,15 @@
         <div id="api">
         </div>
     </div>
-	<script src="https://trod-dev.github.io/Puratos_EOP_Test/customLayoutChanges.js"></script> 
+	<script src="https://trod-dev.github.io/Puratos_EOP_Test/customLayoutChanges.js" defer></script> 
 	<script>
-		const forms = document.querySelectorAll('form');
-		forms.forEach(form => {
-		form.noValidate = true;
-		});
+		document.addEventListener('DOMContentLoaded', function() {
+			const forms = document.querySelectorAll('form');
+			forms.forEach(form => {
+			  form.noValidate = true;
+			});
+			console.log('Forms found:', forms);
+		  });
 	</script>
 </body>
 </html>
