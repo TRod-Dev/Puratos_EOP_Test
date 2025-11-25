@@ -198,7 +198,7 @@
 		display: grid;
 		-ms-grid-columns: 50% 1fr;
 		grid-template-columns: 60% 1fr;
-		gap: 0 30px;
+		gap: 0 50px;
 		height: calc(100% - 151px);
 		margin-top: 151px;
 		width: 100%;
@@ -234,7 +234,11 @@
 		margin-bottom: 20px;
 	}
 	
-	#registration-title button{
+	#registration-content{
+		width: fit-content;
+	}
+	
+	#registration-content button{
 		padding: 12px 30px;
 		border-radius: 30px;
 		font-size: 16px;
@@ -262,12 +266,14 @@
 		<div class="azure-layout-container">
 			<div id="api"></div>
 			<div id="registration">
-				<div id="registration-title">
-					<h3>I am a Puratos customer but I don't have an account</h3>
+				<div id="registration-content">
+					<div id="registration-title">
+						<h3>I am a Puratos customer but I don't have an account</h3>
+					</div>
+					<a href="https://connect-dev.puratos.com/EasyOrderPortal/Registration">
+						<button>CREATE ACCOUNT</button>
+					</a>
 				</div>
-				<a href="https://connect-dev.puratos.com/EasyOrderPortal/Registration">
-					<button>CREATE ACCOUNT</button>
-				</a>
 			</div>
 		</div>
     </div>
