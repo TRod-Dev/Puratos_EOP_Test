@@ -25,15 +25,14 @@
 	    font-style: normal;
 	}
 
+	/* Fallback fonts (Remove if custom fonts are hosted correctly) */
+	body, html {
+		font-family: 'Century Gothic','Sansa','Karmina';
+	}
 
-        /* Fallback fonts (Remove if custom fonts are hosted correctly) */
-        body, html {
-            font-family: 'Century Gothic','Sansa','Karmina';
-        }
-
-        h1 {
-            font-size: 20px;
-        }
+	h1 {
+		font-size: 20px;
+	}
 
 	body {
 	    max-width: 100%;
@@ -100,14 +99,14 @@
 	}
 
 	#api {
-		width: 300px;
 		background: rgba(255, 255, 255, 0.8);
-		padding: 20px;
+		padding: 60px 30px;
 		border-radius: 10px;
 		box-shadow: none;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		justify-self: end;
 	}
         
 	#forgotPassword {
@@ -197,7 +196,7 @@
 	    background: #f5f4f4;
 		display: -ms-grid;
 		display: grid;
-		-ms-grid-columns: 60% 1fr;
+		-ms-grid-columns: 50% 1fr;
 		grid-template-columns: 60% 1fr;
 		gap: 0 30px;
 		height: calc(100% - 151px);
@@ -210,12 +209,29 @@
 	
 	#registration {
 		width: 100%;
-		height: 20px;
-		background-color: green;
+		height: 100%;
 	}
 	
 	h2 {
 		font-size: 32px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 34px;
+		margin: 0;
+		text-transform: none;
+	}
+	
+	h3 {
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 700;
+		color: #000;
+		line-height: 22px;
+		margin-top: 0;
+	}
+	
+	#registration-title{
+		margin-bottom: 20px;
 	}
 	
     </style>
@@ -225,7 +241,14 @@
         <div id="logo"></div>
 		<div class="azure-layout-container">
 			<div id="api"></div>
-			<div id="registration"></div>
+			<div id="registration">
+				<div id="registration-title">
+					<h3>I am a Puratos customer but I don't have an account</h3>
+				</div>
+				<div id="registration-actions">
+					<a href="https://connect-dev.puratos.com/EasyOrderPortal/Registration"></a>
+				</div>
+			</div>
 		</div>
     </div>
 	<!-- <script src="https://cdn.jsdelivr.net/gh/TRod-Dev/Puratos_EOP_Test@main/customLayoutChanges.js" defer></script> -->
