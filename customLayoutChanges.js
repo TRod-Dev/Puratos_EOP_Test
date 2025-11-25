@@ -1,3 +1,5 @@
+console.log('loading js...');
+
 /**
  * Injects a show/hide password toggle button with an inline SVG icon next to the password input.
  */
@@ -118,3 +120,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
   tryAttachObserver();
 });
+
+/**
+ * Invalidate the form validate (tooltip)
+ */
+ document.addEventListener('DOMContentLoaded', function() {
+	const forms = document.querySelectorAll('form');
+	forms.forEach(form => {
+		form.noValidate = true;
+	});
+	console.log('Forms found:', forms);
+});
+

@@ -189,10 +189,6 @@
 		display:none;
 	}
 	
-	label:has(+.error[aria-hidden=false]), .password-label:has(+.error[aria-hidden=false]) label {
-		color: #e31002 !important;
-	}
-	
 	input .highlightError {
 		border: 1px solid #e31002;
 		background: rgba(227, 16, 2, .05);
@@ -207,15 +203,6 @@
         <div id="api">
         </div>
     </div>
-	<script src="https://trod-dev.github.io/Puratos_EOP_Test/customLayoutChanges.js" defer></script> 
-	<script>
-		document.addEventListener('DOMContentLoaded', function() {
-			const forms = document.querySelectorAll('form');
-			forms.forEach(form => {
-			  form.noValidate = true;
-			});
-			console.log('Forms found:', forms);
-		  });
-	</script>
+	<script src="https://trod-dev.github.io/Puratos_EOP_Test/customLayoutChanges.js" defer></script>
 </body>
 </html>
