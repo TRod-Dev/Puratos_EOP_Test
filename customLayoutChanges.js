@@ -30,7 +30,8 @@ function insertPasswordToggle() {
       display: "flex",
       alignItems: "center",
       justifyContent: "center",
-      height: "100%"
+      height: "100%",
+	  order: "3"
     });
 
     toggleBtn.innerHTML = `
