@@ -157,3 +157,5 @@ document.addEventListener('DOMContentLoaded', () => {
   observer.observe(document.body, { childList: true, subtree: true });
 })();
  */
+ 
+ console.log('ended loading js');
