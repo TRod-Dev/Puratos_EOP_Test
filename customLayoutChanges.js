@@ -123,8 +123,8 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 /**
- * Invalidate the form validate (tooltip)
- */
+ * Invalidate the form validate (tooltip) *
+
 (function() {
   function disableValidation(form) {
     if (!form.hasAttribute('novalidate')) {
@@ -156,5 +156,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
   observer.observe(document.body, { childList: true, subtree: true });
 })();
-
+ */
 
